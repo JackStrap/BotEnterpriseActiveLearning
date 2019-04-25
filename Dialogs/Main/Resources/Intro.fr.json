@@ -1,0 +1,58 @@
+﻿{
+	"$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+	"type": "AdaptiveCard",
+	"version": "1.0",
+	"body": [
+		{
+			"type": "Image",
+			"url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtB3AwMUeNoq4gUBGe6Ocj8kyh3bXa9ZbV7u1fVKQoyKFHdkqU",
+			"size": "stretch"
+		},
+		{
+			"type": "TextBlock",
+			"spacing": "medium",
+			"size": "default",
+			"weight": "bolder",
+			"text": "Bienvenue sur le Bot SAQ!",
+			"wrap": true,
+			"maxLines": 0
+		},
+		{
+			"type": "TextBlock",
+			"size": "default",
+			"isSubtle": true,
+			"text": "Ce bot va vous présenter QnA Maker et l'apprentissage actif.\r Cette application démo utilise le FAQ du site saq.com.\n\nTapez une requête pour commencer.",
+			"wrap": true,
+			"maxLines": 0
+		}
+	],
+	"actions": [
+		{
+			"type": "Action.Submit",
+			"title": "Commencer",
+			"data": {
+				"action": "startOnboarding"
+			}
+		},
+		{
+			"type": "Action.OpenUrl",
+			"title": "Visiter SAQ.com",
+			"url": "https://www.saq.com/"
+		},
+		{
+			"type": "Action.OpenUrl",
+			"title": "Visualiser le FAQ de SAQ.com",
+			"url": "https://www.saq.com/content/SAQ/fr/a-propos/pour-nous-joindre/foire-aux-questions.html"
+		},
+		{
+			"type": "Action.OpenUrl",
+			"title": "Ce bot est basé sur QnA Maker",
+			"url": "https://www.qnamaker.ai/"
+		},
+		{
+			"type": "Action.OpenUrl",
+			"title": "Essayez le bot web Skype ici!",
+			"url": "https://devbolsewebbot.azurewebsites.net/skype.html"
+		}
+	]
+}

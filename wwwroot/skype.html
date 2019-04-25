@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SAQ: Skype Chat Bot</title>
+	<link href="/lib/main.css" rel="stylesheet" />
+
+	<script src="https://swc.cdn.skype.com/sdk/v1/sdk.min.js"></script>
+</head>
+<body>
+	<header class="header">
+		<div class="header-inner-container">
+			<a href="/"><div class="header-icon" style="display: inline-block"></div></a>
+			<div class="header-text" style="display: inline-block">FAQ Skype Bot</div>
+		</div>
+	</header>
+	<div class="row">
+		<!--<div class="skype-chat" data-bot-id="ecb92dcb-6bcb-49c4-868b-6a12ea3839d7"></div>-->
+		<div id="webchat" class="skype-button bubble" data-bot-id="ecb92dcb-6bcb-49c4-868b-6a12ea3839d7"></div>
+	</div>
+	<div class="sk-logo-container">
+		<div style="float:left; position:fixed; bottom:25px;">
+			<a href='https://join.skype.com/bot/ecb92dcb-6bcb-49c4-868b-6a12ea3839d7'>
+				<img src='https://dev.botframework.com/Client/Images/Add-To-Skype-Buttons.png' />
+			</a>
+		</div>
+	</div>
+	<!--<script>
+		//SkypeWebControl.SDK.start({
+		//	ConversationId: 'ecb92dcb-6bcb-49c4-868b-6a12ea3839d7',
+		//	//ConversationId: 'webchat',
+		//	ConversationType: 'agent'
+		//});
+		//SkypeWebControl.SDK.start();
+	</script>-->
+
+</body>
+</html>

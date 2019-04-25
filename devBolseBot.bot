@@ -1,0 +1,113 @@
+{
+	"name": "devBolseBot",
+	"description": "",
+	"services": [
+		{
+			"type": "abs",
+			"name": "devBolseBot",
+			"resourceGroup": "RG_DevBot",
+			"serviceName": "devBolseBot",
+			"appId": "",
+			"tenantId": "",
+			"subscriptionId": "",
+			"id": "1"
+		},
+		{
+			"type": "endpoint",
+			"name": "development",
+			"appId": "",
+			"appPassword": "",
+			"endpoint": "http://localhost:3978/api/messages",
+			"id": "2"
+		},
+		{
+			"type": "endpoint",
+			"name": "production",
+			"appId": "",
+			"appPassword": "",
+			"endpoint": "https://devbolsewebbot.azurewebsites.net/api/messages",
+			"id": "3"
+		},
+		{
+			"type": "appInsights",
+			"name": "devBolseBotAppIn",
+			"instrumentationKey": "",
+			"applicationId": "",
+			"apiKeys": { "apiKey": "" },
+			"tenantId": "",
+			"subscriptionId": "",
+			"resourceGroup": "RG_DevBot",
+			"serviceName": "devBolseBot6nmvdo",
+			"id": "4"
+		},
+		{
+			"type": "blob",
+			"name": "devBolseBotBlob",
+			"connectionString": "",
+			"tenantId": "",
+			"subscriptionId": "",
+			"resourceGroup": "RG_DevBot",
+			"serviceName": "devbolsestoragebot",
+			"container": "transcripts-bot",
+			"id": "5"
+		},
+		{
+			"type": "cosmosdb",
+			"name": "devbolsecosmos",
+			"serviceName": "devbolsecosmos",
+			"tenantId": "",
+			"subscriptionId": "",
+			"resourceGroup": "RG_DataBases",
+			"endpoint": "",
+			"key": "",
+			"database": "botstate-db",
+			"collection": "botstate-collection",
+			"id": "6"
+		},
+		{
+			"type": "qna",
+			"name": "devBolseQnAKB",
+			"kbId": "",
+			"subscriptionKey": "",
+			"endpointKey": "",
+			"hostname": "",
+			"id": "faq"
+		},
+		{
+			"type": "qna",
+			"name": "ChitChat",
+			"kbId": "",
+			"subscriptionKey": "",
+			"endpointKey": "",
+			"hostname": "",
+			"id": "chitchat"
+		},
+		{
+			"type": "luis",
+			"name": "devbolsebotenterprise_General",
+			"appId": "",
+			"authoringKey": "",
+			"subscriptionKey": "",
+			"version": "0.1",
+			"region": "westus",
+			"id": "general"
+		},
+		{
+			"type": "dispatch",
+			"name": "devbolsebotenterprise_Dispatch",
+			"serviceIds": [
+				"general",
+				"faq",
+				"chitchat"
+			],
+			"appId": "",
+			"authoringKey": "",
+			"subscriptionKey": "",
+			"version": "0.1",
+			"region": "westus",
+			"id": "dispatch"
+		}
+	],
+	"padlock": "",
+	"version": "2.0"
+}
